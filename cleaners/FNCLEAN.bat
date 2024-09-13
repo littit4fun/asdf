@@ -232,9 +232,6 @@ del C:\System Volume Information\tracking.log*.*
 del C:\System Volume Information\WPSettings.dat*.*
 
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Recent\*.*"
-del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Google\Chrome\User Data\lockfile"
-del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Google\Chrome\User Data\BrowserMetrics\*.*"
-del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Google\Chrome\User Data\Default\*.*"
 
 del /s /f /a:h /a:a /q "%systemdrive%\Recovery\ntuser.sys\*.*" >nul 2>&1
 del /s /f /a:h /a:a /q "%systemdrive%\Users\Public\Libraries\collection.dat\*.*" >nul 2>&1
@@ -1007,7 +1004,6 @@ rmdir /s /q "@del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Loc
 @del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\EpicGamesLauncher\Saved\webcache\Service Worker"
 @del /s /f /a:h /a:a /q "C:\Windows\Prefetch\FOLDERCHANGESVIEW.EXE-B277C3B5.pf"
 @del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\EpicGamesLauncher\Saved\Config"
-@del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Google\Chrome\User Data\Default\Reporting and NEL-journal"
 @del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Temp\StructuredQuery.log"
 @del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\EpicGamesLauncher\Saved\Config\Windows"
 @del /s /f /a:h /a:a /q "C:\Program Files (x86)\EasyAntiCheat\EasyAntiCheat.exe"
@@ -2772,11 +2768,8 @@ del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\EpicGamesLauncher\Save
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\FortniteGame\Saved\Config\CrashReportClient\*.*"
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\FortniteGame\Saved\Demos\*.*"
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Recent\*.*"
-del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Google\Chrome\User Data\lockfile"
-del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Google\Chrome\User Data\BrowserMetrics\*.*"
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\FortniteGame\Saved\Config\CrashReportClient\*.*"
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\FortniteGame\Saved\Logs\*.*"
-del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Google\Chrome\User Data\Default\*.*"
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\NVIDIA Corporation\GfeSDK\*.*"
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\UnrealEngine\*.*" >nul 2>&1
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\EpicGamesLauncher\Saved\Logs\*.*" >nul 2>&1
@@ -3878,7 +3871,6 @@ reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore
 reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\S-1-5-21-2532382528-581214834-2534474248-1001\Microsoft.XboxGameOverlay_1.41.24001.0_neutral_~_8wekyb3d8bbwe\Microsoft.VCLibs.140.00_14.0.27323.0_x86__8wekyb3d8bbwe\Path: "C:\Program Files\WindowsApps\Microsoft.VCLibs.140.00_14.0.27323.0_x86__8wekyb3d8bbwe\AppxManifest.xml"" /f
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\VolatileNotifications\41C64E6DA3D39855:  01 00 04 80 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 02 00 1C 00 01 00 00 00 00 00 14 00 03 00 00 00 01 01 00 00 00 00 00 05 0B 00 00 00 04 00 00 00" /f
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\VolatileNotifications\41C64E6DA3CF4055:  01 00 04 80 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 02 00 1C 00 01 00 00 00 00 00 14 00 03 00 00 00 01 01 00 00 00 00 00 05 0B 00 00 00 04 00 00 00" /f
-reg delete "HKLM\SOFTWARE\WOW6432Node\Google\Update\UsageStats\Daily\Counts\cup_ecdsa_http_failure:  01 00 00 00 00 00 00 00" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\AppPackageType: 0x00000000" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\PackageSid: "S-1-15-2-1823635404-1364722122-2170562666-1762391777-2399050872-3465541734-3732476201"" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\EnterpriseID: 0x00000000" /f
@@ -4214,7 +4206,6 @@ reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore
 reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\S-1-5-21-2532382528-581214834-2534474248-1001\Microsoft.XboxGameOverlay_1.41.24001.0_neutral_~_8wekyb3d8bbwe\Microsoft.VCLibs.140.00_14.0.27323.0_x86__8wekyb3d8bbwe\Path: "C:\Program Files\WindowsApps\Microsoft.VCLibs.140.00_14.0.27323.0_x86__8wekyb3d8bbwe\AppxManifest.xml"" /f
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\VolatileNotifications\41C64E6DA3D39855:  01 00 04 80 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 02 00 1C 00 01 00 00 00 00 00 14 00 03 00 00 00 01 01 00 00 00 00 00 05 0B 00 00 00 04 00 00 00" /f
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\VolatileNotifications\41C64E6DA3CF4055:  01 00 04 80 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 02 00 1C 00 01 00 00 00 00 00 14 00 03 00 00 00 01 01 00 00 00 00 00 05 0B 00 00 00 04 00 00 00" /f
-reg delete "HKLM\SOFTWARE\WOW6432Node\Google\Update\UsageStats\Daily\Counts\cup_ecdsa_http_failure:  01 00 00 00 00 00 00 00" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\AppPackageType: 0x00000000" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\PackageSid: "S-1-15-2-1823635404-1364722122-2170562666-1762391777-2399050872-3465541734-3732476201"" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\EnterpriseID: 0x00000000" /f
@@ -4783,7 +4774,6 @@ del /s /f /a:h /a:a /q "%systemdrive%\Windows\System32\config\systemprofile\AppD
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData\*.*
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Microsoft\Windows\INetCache\IE\*.*
 del /s /f /a:h /a:a /q "%systemdrive%\Program Files (x86)\Common Files\BattlEye\BEDaisy.sys\*.*
-del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Google\Chrome\*.*
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\AC\AppCache\YVV2MEXU\*.*
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations\*.*
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\AC\INetCache\*.*
@@ -5355,8 +5345,6 @@ del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Microsoft\Windows\WebC
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Microsoft\Windows\WebCache\V01tmp.log"
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\EpicGamesLauncher\Saved\Data\Staged\b1904793c9714ba68e7abd6ddd4c740c.dat"
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\EpicGamesLauncher\Saved\Data\b1904793c9714ba68e7abd6ddd4c740c.dat"
-del /s /f /a:h /a:a /q "C:\Program Files (x86)\Google\CrashReports"
-del /s /f /a:h /a:a /q "C:\Windows\Prefetch\GOOGLEUPDATE.EXE-0E1E7B82.pf"
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\FortniteGame\Saved\Cloud\b1904793c9714ba68e7abd6ddd4c740c"
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\FortniteGame\Saved\Cloud\b1904793c9714ba68e7abd6ddd4c740c\ClientSettings.Sav"
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\AppData\Indexed DB\temp.edb"
@@ -5369,7 +5357,6 @@ del /s /f /a:h /a:a /q "C:\Windows\Prefetch\REMOTING_HOST.EXE-98099BD0.pf"
 del /s /f /a:h /a:a /q "C:\ProgramData\NVIDIA Corporation\Drs\nvAppTimestamps"
 del /s /f /a:h /a:a /q "C:\Windows\TEMP\NVIDIA Corporation"
 del /s /f /a:h /a:a /q "C:\Windows\TEMP\NVIDIA Corporation\NV_Cache"
-del /s /f /a:h /a:a /q "C:\Program Files (x86)\Google\Chrome Remote Desktop\83.0.4103.2\debug.log"
 del /s /f /a:h /a:a /q "C:\Windows\Prefetch\REMOTING_DESKTOP.EXE-AE08534C.pf"
 del /s /f /a:h /a:a /q "C:\ProgramData\Microsoft\Windows\ClipSVC"
 del /s /f /a:h /a:a /q "C:\ProgramData\Microsoft\Windows\WER\ReportArchive"
@@ -6241,13 +6228,6 @@ del /s /f /a:h /a:a /q "C:\ProgramData\Microsoft\SmsRouter\MessageStore\SmsInter
 del /s /f /a:h /a:a /q "C:\ProgramData\Microsoft\Windows\LfSvc\Geofence\S-1-5-18_NonPackagedApp\Geofence.dat*.*
 del /s /f /a:h /a:a /q "C:\ProgramData\Microsoft\Windows\Parental Controls\settings\settings.bin*.*
 del /s /f /a:h /a:a /q "C:\ProgramData\NVIDIA Corporation\Drs\nvAppTimestamps*.*
-del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Google\Chrome\User Data\Default\Cookies*.*
-del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Google\Chrome\User Data\Default\Cookies-journal*.*
-del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Google\Chrome\User Data\Default\Network Persistent State*.*
-del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Google\Chrome\User Data\Default\Preferences*.*
-del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Google\Chrome\User Data\Default\Reporting and NEL*.*
-del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Google\Chrome\User Data\Default\Reporting and NEL-journal*.*
-del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Google\Chrome\User Data\Default\TransportSecurity*.*
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Microsoft\Windows\WebCache\WebCacheV01.dat*.*
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Microsoft\Windows\WebCache\WebCacheV01.jfm*.*
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\Settings\settings.dat.LOG2*.*
@@ -6350,7 +6330,6 @@ del /s /f /a:h /a:a /q "C:\Windows\INF\WmiApRpl*.*
 del /s /f /a:h /a:a /q "C:\Windows\INF\WmiApRpl\0009*.*
 del /s /f /a:h /a:a /q "C:\Windows\System32\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData*.*
 pause
-del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_0004f7*.*
  del /s /f /a:h /a:a /q C:\MSOCache
  del /s /f /a:h /a:a /q C:\MSOCache\{71230000-00E2-0000-1000-00000000}
  del /s /f /a:h /a:a /q C:\MSOCache\{71230000-00E2-0000-1000-00000000}\Setup.dat
@@ -6889,141 +6868,6 @@ del /s /q /f /a:h /a:a C:\Users\All Users\Packages\Microsoft.XboxGamingOverlay_8
 del /s /q /f /a:h /a:a C:\Users\All Users\Packages\Microsoft.XboxGamingOverlay_8wekyb3d8bbwe\S-1-5-21-2570960266-2216518384-2913187921-1001\SystemAppData\Helium\UserClasses.dat
 del /s /q /f /a:h /a:a C:\Users\All Users\Packages\Microsoft.XboxGamingOverlay_8wekyb3d8bbwe\S-1-5-21-2570960266-2216518384-2913187921-1001\SystemAppData\Helium\UserClasses.dat.LOG1
 del /s /q /f /a:h /a:a C:\Users\All Users\Packages\Microsoft.XboxGamingOverlay_8wekyb3d8bbwe\S-1-5-21-2570960266-2216518384-2913187921-1001\SystemAppData\Helium\UserClasses.dat.LOG2
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00015e
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00015f
-del /s /q /f /a:h /a:a C:\Users\%username%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000160
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000161
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000162
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000163
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000164
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000165
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000166
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000167
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000168
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000169
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016a
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016b
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016c
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016d
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016e
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016f
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000170
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000171
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000172
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000173
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000174
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000175
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000176
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000177
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000178
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000179
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017a
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017b
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017c
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017d
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017e
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017f
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000180
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000181
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000182
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000183
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000184
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000185
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000186
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000187
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000188
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000189
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018a
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018b
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018c
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018d
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018e
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018f
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000190
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000191
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000192
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000193
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000194
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000195
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000196
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000197
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000198
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000199
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019a
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019b
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019c
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019d
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019e
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019f
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\026fa224e4fc55bc_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\081016aa4d2a0e75_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\0c53bea1c35d3a00_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\0d60d6b9d9ac3d10_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\142018bda35a08c9_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\149e107d34855987_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\16ec57f44bfe87f2_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\1c175984c201faac_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\3402ad79a7be0ede_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\3da0dc5e81ef0b11_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\429c0e0a60a7ec9c_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\48c0ffa899d585c4_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\494f1adbb71eaa5d_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\4d2901eef068f5a3_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\59a4b39d95d8272e_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\5bfbc5f5333d3252_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\618faf0dbc2c360b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\65013608067b96dd_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\6694c2ddf58883e9_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\6acdd30412939c46_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\6b980b5716a82781_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\6f58caffc4c2a15d_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\701acba20a1db141_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\791b7ec21ae3c0ef_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\79979d1022464ab9_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\7cc4b01b4f9d366b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\887228d782f8e7ab_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\899cb61528e1864f_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\8d363748524158f3_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\8f72435e3b152601_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\92af8d12ab38066b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\94b42f6ab8642940_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\96e3390ec1ef2390_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\9737d2d3ce6a5417_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\9757e4563847b96f_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\978d3077444b39ce_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\98f0c503e111ac1a_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\aba19788436c1274_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\af05301707fa435e_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\b3f11446b21a606c_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\b4bc73bb3b57c001_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\b56708c5f93487bb_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\bbf83f47f7f78fc0_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\bc1a2a9249c912b9_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\c4f91b5ca3ccc93b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\c6c513fb90649048_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\ce09495ada64f84b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\d8258482106d5d96_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\dc1cfd64a9796838_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\dd93e6c9f34d6ef4_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\e4500db8d9a2379c_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\e89fa93b5616751b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\e91f0352154b994b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\e937320f04b72d8c_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\f730bbc8bb56873a_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\f7591045d46303be_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\fa8d925e09a3beb3_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\facbad11f2e9cf37_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\fae1dae73e0ee236_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\File System\Origins\LOG.old
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\IndexedDB\https_www.epicgames.com_0.indexeddb.leveldb\000433.log
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\IndexedDB\https_www.epicgames.com_0.indexeddb.leveldb\000435.ldb
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\JumpListIconsRecentClosed\53e18096-02ff-4da8-b7e5-386d65c320f2.tmp
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\JumpListIconsRecentClosed\7877c237-32cf-4d6c-b48f-efb92692c2dc.tmp
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Session Storage\000005.ldb
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Session Storage\000006.log
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Session Storage\000007.ldb
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Search Logos\logo
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Search Logos\metadata
 del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Microsoft\CLR_v4.0_32\UsageLogs\Hide.me.exe.log
 del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Microsoft\CLR_v4.0_32\UsageLogs\hidemesvc.exe.log
 del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Microsoft\CLR_v4.0_32\UsageLogs\repairdriver.exe.log
@@ -7800,7 +7644,6 @@ del /s /f /a:h /a:a /q "%systemdrive%\Windows\System32\config\systemprofile\AppD
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData\*.*
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Microsoft\Windows\INetCache\IE\*.*
 del /s /f /a:h /a:a /q "%systemdrive%\Program Files (x86)\Common Files\BattlEye\BEDaisy.sys\*.*
-del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Google\Chrome\*.*
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\AC\AppCache\YVV2MEXU\*.*
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations\*.*
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\AC\INetCache\*.*
@@ -8372,8 +8215,6 @@ del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Microsoft\Windows\WebC
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Microsoft\Windows\WebCache\V01tmp.log"
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\EpicGamesLauncher\Saved\Data\Staged\b1904793c9714ba68e7abd6ddd4c740c.dat"
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\EpicGamesLauncher\Saved\Data\b1904793c9714ba68e7abd6ddd4c740c.dat"
-del /s /f /a:h /a:a /q "D:\Program Files (x86)\Google\CrashReports"
-del /s /f /a:h /a:a /q "D:\Windows\Prefetch\GOOGLEUPDATE.EXE-0E1E7B82.pf"
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\FortniteGame\Saved\Cloud\b1904793c9714ba68e7abd6ddd4c740c"
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\FortniteGame\Saved\Cloud\b1904793c9714ba68e7abd6ddd4c740c\ClientSettings.Sav"
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\AppData\Indexed DB\temp.edb"
@@ -8386,7 +8227,6 @@ del /s /f /a:h /a:a /q "D:\Windows\Prefetch\REMOTING_HOST.EXE-98099BD0.pf"
 del /s /f /a:h /a:a /q "D:\ProgramData\NVIDIA Corporation\Drs\nvAppTimestamps"
 del /s /f /a:h /a:a /q "D:\Windows\TEMP\NVIDIA Corporation"
 del /s /f /a:h /a:a /q "D:\Windows\TEMP\NVIDIA Corporation\NV_Cache"
-del /s /f /a:h /a:a /q "D:\Program Files (x86)\Google\Chrome Remote Desktop\83.0.4103.2\debug.log"
 del /s /f /a:h /a:a /q "D:\Windows\Prefetch\REMOTING_DESKTOP.EXE-AE08534C.pf"
 del /s /f /a:h /a:a /q "D:\ProgramData\Microsoft\Windows\ClipSVC"
 del /s /f /a:h /a:a /q "D:\ProgramData\Microsoft\Windows\WER\ReportArchive"
@@ -9274,13 +9114,6 @@ del /s /f /a:h /a:a /q "D:\ProgramData\Microsoft\SmsRouter\MessageStore\SmsInter
 del /s /f /a:h /a:a /q "D:\ProgramData\Microsoft\Windows\LfSvc\Geofence\S-1-5-18_NonPackagedApp\Geofence.dat*.*
 del /s /f /a:h /a:a /q "D:\ProgramData\Microsoft\Windows\Parental Controls\settings\settings.bin*.*
 del /s /f /a:h /a:a /q "D:\ProgramData\NVIDIA Corporation\Drs\nvAppTimestamps*.*
-del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cookies*.*
-del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cookies-journal*.*
-del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Network Persistent State*.*
-del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Preferences*.*
-del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Reporting and NEL*.*
-del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Reporting and NEL-journal*.*
-del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\TransportSecurity*.*
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Microsoft\Windows\WebCache\WebCacheV01.dat*.*
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Microsoft\Windows\WebCache\WebCacheV01.jfm*.*
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\Settings\settings.dat.LOG2*.*
@@ -9383,7 +9216,6 @@ del /s /f /a:h /a:a /q "D:\Windows\INF\WmiApRpl*.*
 del /s /f /a:h /a:a /q "D:\Windows\INF\WmiApRpl\0009*.*
 del /s /f /a:h /a:a /q "C:\Windows\System32\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData*.*
 pause
-del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_0004f7*.*
  del /s /f /a:h /a:a /q D:\MSOCache
  del /s /f /a:h /a:a /q D:\MSOCache\{71230000-00E2-0000-1000-00000000}
  del /s /f /a:h /a:a /q D:\MSOCache\{71230000-00E2-0000-1000-00000000}\Setup.dat
@@ -9931,141 +9763,6 @@ del /s /q /f /a:h /a:a D:\Users\All Users\Packages\Microsoft.XboxGamingOverlay_8
 del /s /q /f /a:h /a:a D:\Users\All Users\Packages\Microsoft.XboxGamingOverlay_8wekyb3d8bbwe\S-1-5-21-2570960266-2216518384-2913187921-1001\SystemAppData\Helium\UserClasses.dat
 del /s /q /f /a:h /a:a D:\Users\All Users\Packages\Microsoft.XboxGamingOverlay_8wekyb3d8bbwe\S-1-5-21-2570960266-2216518384-2913187921-1001\SystemAppData\Helium\UserClasses.dat.LOG1
 del /s /q /f /a:h /a:a D:\Users\All Users\Packages\Microsoft.XboxGamingOverlay_8wekyb3d8bbwe\S-1-5-21-2570960266-2216518384-2913187921-1001\SystemAppData\Helium\UserClasses.dat.LOG2
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00015e
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00015f
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000160
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000161
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000162
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000163
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000164
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000165
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000166
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000167
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000168
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000169
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016a
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016b
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016c
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016d
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016e
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016f
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000170
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000171
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000172
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000173
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000174
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000175
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000176
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000177
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000178
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000179
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017a
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017b
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017c
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017d
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017e
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017f
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000180
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000181
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000182
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000183
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000184
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000185
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000186
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000187
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000188
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000189
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018a
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018b
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018c
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018d
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018e
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018f
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000190
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000191
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000192
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000193
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000194
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000195
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000196
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000197
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000198
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000199
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019a
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019b
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019c
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019d
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019e
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019f
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\026fa224e4fc55bc_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\081016aa4d2a0e75_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\0c53bea1c35d3a00_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\0d60d6b9d9ac3d10_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\142018bda35a08c9_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\149e107d34855987_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\16ec57f44bfe87f2_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\1c175984c201faac_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\3402ad79a7be0ede_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\3da0dc5e81ef0b11_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\429c0e0a60a7ec9c_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\48c0ffa899d585c4_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\494f1adbb71eaa5d_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\4d2901eef068f5a3_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\59a4b39d95d8272e_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\5bfbc5f5333d3252_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\618faf0dbc2c360b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\65013608067b96dd_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\6694c2ddf58883e9_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\6acdd30412939c46_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\6b980b5716a82781_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\6f58caffc4c2a15d_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\701acba20a1db141_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\791b7ec21ae3c0ef_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\79979d1022464ab9_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\7cc4b01b4f9d366b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\887228d782f8e7ab_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\899cb61528e1864f_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\8d363748524158f3_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\8f72435e3b152601_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\92af8d12ab38066b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\94b42f6ab8642940_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\96e3390ec1ef2390_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\9737d2d3ce6a5417_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\9757e4563847b96f_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\978d3077444b39ce_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\98f0c503e111ac1a_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\aba19788436c1274_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\af05301707fa435e_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\b3f11446b21a606c_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\b4bc73bb3b57c001_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\b56708c5f93487bb_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\bbf83f47f7f78fc0_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\bc1a2a9249c912b9_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\c4f91b5ca3ccc93b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\c6c513fb90649048_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\ce09495ada64f84b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\d8258482106d5d96_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\dc1cfd64a9796838_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\dd93e6c9f34d6ef4_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\e4500db8d9a2379c_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\e89fa93b5616751b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\e91f0352154b994b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\e937320f04b72d8c_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\f730bbc8bb56873a_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\f7591045d46303be_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\fa8d925e09a3beb3_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\facbad11f2e9cf37_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\fae1dae73e0ee236_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\File System\Origins\LOG.old
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\IndexedDB\https_www.epicgames.com_0.indexeddb.leveldb\000433.log
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\IndexedDB\https_www.epicgames.com_0.indexeddb.leveldb\000435.ldb
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\JumpListIconsRecentClosed\53e18096-02ff-4da8-b7e5-386d65c320f2.tmp
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\JumpListIconsRecentClosed\7877c237-32cf-4d6c-b48f-efb92692c2dc.tmp
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Session Storage\000005.ldb
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Session Storage\000006.log
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Session Storage\000007.ldb
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Search Logos\logo
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Search Logos\metadata
 del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Microsoft\CLR_v4.0_32\UsageLogs\Hide.me.exe.log
 del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Microsoft\CLR_v4.0_32\UsageLogs\hidemesvc.exe.log
 del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Microsoft\CLR_v4.0_32\UsageLogs\repairdriver.exe.log
@@ -10739,7 +10436,6 @@ del /s /f /a:h /a:a /q "%systemdrive%\Windows\System32\config\systemprofile\AppD
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData\*.*
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Microsoft\Windows\INetCache\IE\*.*
 del /s /f /a:h /a:a /q "%systemdrive%\Program Files (x86)\Common Files\BattlEye\BEDaisy.sys\*.*
-del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Google\Chrome\*.*
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\AC\AppCache\YVV2MEXU\*.*
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations\*.*
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\AC\INetCache\*.*
@@ -11311,8 +11007,6 @@ del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Microsoft\Windows\WebC
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Microsoft\Windows\WebCache\V01tmp.log"
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\EpicGamesLauncher\Saved\Data\Staged\b1904793c9714ba68e7abd6ddd4c740c.dat"
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\EpicGamesLauncher\Saved\Data\b1904793c9714ba68e7abd6ddd4c740c.dat"
-del /s /f /a:h /a:a /q "E:\Program Files (x86)\Google\CrashReports"
-del /s /f /a:h /a:a /q "E:\Windows\Prefetch\GOOGLEUPDATE.EXE-0E1E7B82.pf"
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\FortniteGame\Saved\Cloud\b1904793c9714ba68e7abd6ddd4c740c"
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\FortniteGame\Saved\Cloud\b1904793c9714ba68e7abd6ddd4c740c\ClientSettings.Sav"
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\AppData\Indexed DB\temp.edb"
@@ -11325,7 +11019,6 @@ del /s /f /a:h /a:a /q "E:\Windows\Prefetch\REMOTING_HOST.EXE-98099BD0.pf"
 del /s /f /a:h /a:a /q "E:\ProgramData\NVIDIA Corporation\Drs\nvAppTimestamps"
 del /s /f /a:h /a:a /q "E:\Windows\TEMP\NVIDIA Corporation"
 del /s /f /a:h /a:a /q "E:\Windows\TEMP\NVIDIA Corporation\NV_Cache"
-del /s /f /a:h /a:a /q "E:\Program Files (x86)\Google\Chrome Remote Desktop\83.0.4103.2\debug.log"
 del /s /f /a:h /a:a /q "E:\Windows\Prefetch\REMOTING_DESKTOP.EXE-AE08534C.pf"
 del /s /f /a:h /a:a /q "E:\ProgramData\Microsoft\Windows\ClipSVC"
 del /s /f /a:h /a:a /q "E:\ProgramData\Microsoft\Windows\WER\ReportArchive"
@@ -12213,13 +11906,6 @@ del /s /f /a:h /a:a /q "E:\ProgramData\Microsoft\SmsRouter\MessageStore\SmsInter
 del /s /f /a:h /a:a /q "E:\ProgramData\Microsoft\Windows\LfSvc\Geofence\S-1-5-18_NonPackagedApp\Geofence.dat*.*
 del /s /f /a:h /a:a /q "E:\ProgramData\Microsoft\Windows\Parental Controls\settings\settings.bin*.*
 del /s /f /a:h /a:a /q "E:\ProgramData\NVIDIA Corporation\Drs\nvAppTimestamps*.*
-del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cookies*.*
-del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cookies-journal*.*
-del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Network Persistent State*.*
-del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Preferences*.*
-del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Reporting and NEL*.*
-del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Reporting and NEL-journal*.*
-del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\TransportSecurity*.*
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Microsoft\Windows\WebCache\WebCacheV01.dat*.*
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Microsoft\Windows\WebCache\WebCacheV01.jfm*.*
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\Settings\settings.dat.LOG2*.*
@@ -12322,7 +12008,6 @@ del /s /f /a:h /a:a /q "E:\Windows\INF\WmiApRpl*.*
 del /s /f /a:h /a:a /q "E:\Windows\INF\WmiApRpl\0009*.*
 del /s /f /a:h /a:a /q "C:\Windows\System32\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData*.*
 pause
-del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_0004f7*.*
  del /s /f /a:h /a:a /q E:\MSOCache
  del /s /f /a:h /a:a /q E:\MSOCache\{71230000-00E2-0000-1000-00000000}
  del /s /f /a:h /a:a /q E:\MSOCache\{71230000-00E2-0000-1000-00000000}\Setup.dat
@@ -12870,141 +12555,6 @@ del /s /q /f /a:h /a:a E:\Users\All Users\Packages\Microsoft.XboxGamingOverlay_8
 del /s /q /f /a:h /a:a E:\Users\All Users\Packages\Microsoft.XboxGamingOverlay_8wekyb3d8bbwe\S-1-5-21-2570960266-2216518384-2913187921-1001\SystemAppData\Helium\UserClasses.dat
 del /s /q /f /a:h /a:a E:\Users\All Users\Packages\Microsoft.XboxGamingOverlay_8wekyb3d8bbwe\S-1-5-21-2570960266-2216518384-2913187921-1001\SystemAppData\Helium\UserClasses.dat.LOG1
 del /s /q /f /a:h /a:a E:\Users\All Users\Packages\Microsoft.XboxGamingOverlay_8wekyb3d8bbwe\S-1-5-21-2570960266-2216518384-2913187921-1001\SystemAppData\Helium\UserClasses.dat.LOG2
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00015e
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00015f
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000160
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000161
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000162
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000163
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000164
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000165
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000166
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000167
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000168
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000169
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016a
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016b
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016c
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016d
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016e
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016f
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000170
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000171
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000172
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000173
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000174
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000175
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000176
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000177
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000178
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000179
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017a
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017b
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017c
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017d
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017e
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017f
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000180
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000181
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000182
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000183
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000184
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000185
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000186
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000187
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000188
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000189
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018a
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018b
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018c
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018d
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018e
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018f
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000190
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000191
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000192
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000193
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000194
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000195
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000196
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000197
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000198
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000199
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019a
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019b
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019c
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019d
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019e
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019f
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\026fa224e4fc55bc_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\081016aa4d2a0e75_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\0c53bea1c35d3a00_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\0d60d6b9d9ac3d10_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\142018bda35a08c9_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\149e107d34855987_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\16ec57f44bfe87f2_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\1c175984c201faac_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\3402ad79a7be0ede_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\3da0dc5e81ef0b11_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\429c0e0a60a7ec9c_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\48c0ffa899d585c4_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\494f1adbb71eaa5d_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\4d2901eef068f5a3_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\59a4b39d95d8272e_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\5bfbc5f5333d3252_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\618faf0dbc2c360b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\65013608067b96dd_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\6694c2ddf58883e9_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\6acdd30412939c46_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\6b980b5716a82781_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\6f58caffc4c2a15d_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\701acba20a1db141_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\791b7ec21ae3c0ef_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\79979d1022464ab9_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\7cc4b01b4f9d366b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\887228d782f8e7ab_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\899cb61528e1864f_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\8d363748524158f3_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\8f72435e3b152601_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\92af8d12ab38066b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\94b42f6ab8642940_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\96e3390ec1ef2390_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\9737d2d3ce6a5417_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\9757e4563847b96f_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\978d3077444b39ce_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\98f0c503e111ac1a_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\aba19788436c1274_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\af05301707fa435e_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\b3f11446b21a606c_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\b4bc73bb3b57c001_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\b56708c5f93487bb_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\bbf83f47f7f78fc0_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\bc1a2a9249c912b9_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\c4f91b5ca3ccc93b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\c6c513fb90649048_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\ce09495ada64f84b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\d8258482106d5d96_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\dc1cfd64a9796838_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\dd93e6c9f34d6ef4_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\e4500db8d9a2379c_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\e89fa93b5616751b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\e91f0352154b994b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\e937320f04b72d8c_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\f730bbc8bb56873a_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\f7591045d46303be_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\fa8d925e09a3beb3_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\facbad11f2e9cf37_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\fae1dae73e0ee236_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\File System\Origins\LOG.old
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\IndexedDB\https_www.epicgames.com_0.indexeddb.leveldb\000433.log
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\IndexedDB\https_www.epicgames.com_0.indexeddb.leveldb\000435.ldb
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\JumpListIconsRecentClosed\53e18096-02ff-4da8-b7e5-386d65c320f2.tmp
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\JumpListIconsRecentClosed\7877c237-32cf-4d6c-b48f-efb92692c2dc.tmp
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Session Storage\000005.ldb
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Session Storage\000006.log
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Session Storage\000007.ldb
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Search Logos\logo
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Search Logos\metadata
 del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Microsoft\CLR_v4.0_32\UsageLogs\Hide.me.exe.log
 del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Microsoft\CLR_v4.0_32\UsageLogs\hidemesvc.exe.log
 del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Microsoft\CLR_v4.0_32\UsageLogs\repairdriver.exe.log
@@ -13678,7 +13228,6 @@ del /s /f /a:h /a:a /q "%systemdrive%\Windows\System32\config\systemprofile\AppD
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData\*.*
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Microsoft\Windows\INetCache\IE\*.*
 del /s /f /a:h /a:a /q "%systemdrive%\Program Files (x86)\Common Files\BattlEye\BEDaisy.sys\*.*
-del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Google\Chrome\*.*
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\AC\AppCache\YVV2MEXU\*.*
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations\*.*
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\AC\INetCache\*.*
@@ -14250,8 +13799,6 @@ del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Microsoft\Windows\WebC
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Microsoft\Windows\WebCache\V01tmp.log"
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\EpicGamesLauncher\Saved\Data\Staged\b1904793c9714ba68e7abd6ddd4c740c.dat"
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\EpicGamesLauncher\Saved\Data\b1904793c9714ba68e7abd6ddd4c740c.dat"
-del /s /f /a:h /a:a /q "F:\Program Files (x86)\Google\CrashReports"
-del /s /f /a:h /a:a /q "F:\Windows\Prefetch\GOOGLEUPDATE.EXE-0E1E7B82.pf"
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\FortniteGame\Saved\Cloud\b1904793c9714ba68e7abd6ddd4c740c"
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\FortniteGame\Saved\Cloud\b1904793c9714ba68e7abd6ddd4c740c\ClientSettings.Sav"
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\AppData\Indexed DB\temp.edb"
@@ -14264,7 +13811,6 @@ del /s /f /a:h /a:a /q "F:\Windows\Prefetch\REMOTING_HOST.EXE-98099BD0.pf"
 del /s /f /a:h /a:a /q "F:\ProgramData\NVIDIA Corporation\Drs\nvAppTimestamps"
 del /s /f /a:h /a:a /q "F:\Windows\TEMP\NVIDIA Corporation"
 del /s /f /a:h /a:a /q "F:\Windows\TEMP\NVIDIA Corporation\NV_Cache"
-del /s /f /a:h /a:a /q "F:\Program Files (x86)\Google\Chrome Remote Desktop\83.0.4103.2\debug.log"
 del /s /f /a:h /a:a /q "F:\Windows\Prefetch\REMOTING_DESKTOP.EXE-AE08534C.pf"
 del /s /f /a:h /a:a /q "F:\ProgramData\Microsoft\Windows\ClipSVC"
 del /s /f /a:h /a:a /q "F:\ProgramData\Microsoft\Windows\WER\ReportArchive"
@@ -15152,13 +14698,6 @@ del /s /f /a:h /a:a /q "F:\ProgramData\Microsoft\SmsRouter\MessageStore\SmsInter
 del /s /f /a:h /a:a /q "F:\ProgramData\Microsoft\Windows\LfSvc\Geofence\S-1-5-18_NonPackagedApp\Geofence.dat*.*
 del /s /f /a:h /a:a /q "F:\ProgramData\Microsoft\Windows\Parental Controls\settings\settings.bin*.*
 del /s /f /a:h /a:a /q "F:\ProgramData\NVIDIA Corporation\Drs\nvAppTimestamps*.*
-del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cookies*.*
-del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cookies-journal*.*
-del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Network Persistent State*.*
-del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Preferences*.*
-del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Reporting and NEL*.*
-del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Reporting and NEL-journal*.*
-del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\TransportSecurity*.*
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Microsoft\Windows\WebCache\WebCacheV01.dat*.*
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Microsoft\Windows\WebCache\WebCacheV01.jfm*.*
 del /s /f /a:h /a:a /q "C:\Users\%USERNAME%\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\Settings\settings.dat.LOG2*.*
@@ -15261,7 +14800,6 @@ del /s /f /a:h /a:a /q "F:\Windows\INF\WmiApRpl*.*
 del /s /f /a:h /a:a /q "F:\Windows\INF\WmiApRpl\0009*.*
 del /s /f /a:h /a:a /q "C:\Windows\System32\config\systemprofile\AppData\LocalLow\Microsoft\CryptnetUrlCache\MetaData*.*
 pause
-del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_0004f7*.*
  del /s /f /a:h /a:a /q F:\MSOCache
  del /s /f /a:h /a:a /q F:\MSOCache\{71230000-00E2-0000-1000-00000000}
  del /s /f /a:h /a:a /q F:\MSOCache\{71230000-00E2-0000-1000-00000000}\Setup.dat
@@ -15809,141 +15347,6 @@ del /s /q /f /a:h /a:a F:\Users\All Users\Packages\Microsoft.XboxGamingOverlay_8
 del /s /q /f /a:h /a:a F:\Users\All Users\Packages\Microsoft.XboxGamingOverlay_8wekyb3d8bbwe\S-1-5-21-2570960266-2216518384-2913187921-1001\SystemAppData\Helium\UserClasses.dat
 del /s /q /f /a:h /a:a F:\Users\All Users\Packages\Microsoft.XboxGamingOverlay_8wekyb3d8bbwe\S-1-5-21-2570960266-2216518384-2913187921-1001\SystemAppData\Helium\UserClasses.dat.LOG1
 del /s /q /f /a:h /a:a F:\Users\All Users\Packages\Microsoft.XboxGamingOverlay_8wekyb3d8bbwe\S-1-5-21-2570960266-2216518384-2913187921-1001\SystemAppData\Helium\UserClasses.dat.LOG2
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00015e
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00015f
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000160
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000161
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000162
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000163
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000164
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000165
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000166
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000167
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000168
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000169
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016a
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016b
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016c
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016d
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016e
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00016f
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000170
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000171
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000172
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000173
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000174
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000175
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000176
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000177
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000178
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000179
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017a
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017b
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017c
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017d
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017e
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00017f
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000180
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000181
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000182
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000183
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000184
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000185
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000186
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000187
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000188
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000189
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018a
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018b
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018c
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018d
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018e
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00018f
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000190
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000191
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000192
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000193
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000194
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000195
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000196
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000197
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000198
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_000199
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019a
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019b
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019c
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019d
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019e
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Cache\f_00019f
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\026fa224e4fc55bc_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\081016aa4d2a0e75_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\0c53bea1c35d3a00_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\0d60d6b9d9ac3d10_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\142018bda35a08c9_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\149e107d34855987_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\16ec57f44bfe87f2_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\1c175984c201faac_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\3402ad79a7be0ede_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\3da0dc5e81ef0b11_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\429c0e0a60a7ec9c_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\48c0ffa899d585c4_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\494f1adbb71eaa5d_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\4d2901eef068f5a3_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\59a4b39d95d8272e_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\5bfbc5f5333d3252_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\618faf0dbc2c360b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\65013608067b96dd_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\6694c2ddf58883e9_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\6acdd30412939c46_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\6b980b5716a82781_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\6f58caffc4c2a15d_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\701acba20a1db141_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\791b7ec21ae3c0ef_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\79979d1022464ab9_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\7cc4b01b4f9d366b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\887228d782f8e7ab_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\899cb61528e1864f_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\8d363748524158f3_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\8f72435e3b152601_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\92af8d12ab38066b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\94b42f6ab8642940_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\96e3390ec1ef2390_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\9737d2d3ce6a5417_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\9757e4563847b96f_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\978d3077444b39ce_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\98f0c503e111ac1a_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\aba19788436c1274_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\af05301707fa435e_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\b3f11446b21a606c_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\b4bc73bb3b57c001_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\b56708c5f93487bb_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\bbf83f47f7f78fc0_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\bc1a2a9249c912b9_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\c4f91b5ca3ccc93b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\c6c513fb90649048_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\ce09495ada64f84b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\d8258482106d5d96_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\dc1cfd64a9796838_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\dd93e6c9f34d6ef4_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\e4500db8d9a2379c_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\e89fa93b5616751b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\e91f0352154b994b_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\e937320f04b72d8c_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\f730bbc8bb56873a_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\f7591045d46303be_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\fa8d925e09a3beb3_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\facbad11f2e9cf37_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Code Cache\js\fae1dae73e0ee236_0
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\File System\Origins\LOG.old
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\IndexedDB\https_www.epicgames.com_0.indexeddb.leveldb\000433.log
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\IndexedDB\https_www.epicgames.com_0.indexeddb.leveldb\000435.ldb
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\JumpListIconsRecentClosed\53e18096-02ff-4da8-b7e5-386d65c320f2.tmp
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\JumpListIconsRecentClosed\7877c237-32cf-4d6c-b48f-efb92692c2dc.tmp
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Session Storage\000005.ldb
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Session Storage\000006.log
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Session Storage\000007.ldb
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Search Logos\logo
-del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Google\Chrome\User Data\Default\Search Logos\metadata
 del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Microsoft\CLR_v4.0_32\UsageLogs\Hide.me.exe.log
 del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Microsoft\CLR_v4.0_32\UsageLogs\hidemesvc.exe.log
 del /s /q /f /a:h /a:a C:\Users\%USERNAME%\AppData\Local\Microsoft\CLR_v4.0_32\UsageLogs\repairdriver.exe.log
@@ -18465,11 +17868,8 @@ del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\EpicGamesLauncher\Save
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\FortniteGame\Saved\Config\CrashReportClient\*.*"
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\FortniteGame\Saved\Demos\*.*"
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Recent\*.*"
-del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Google\Chrome\User Data\lockfile"
-del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Google\Chrome\User Data\BrowserMetrics\*.*"
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\FortniteGame\Saved\Config\CrashReportClient\*.*"
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\FortniteGame\Saved\Logs\*.*"
-del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Google\Chrome\User Data\Default\*.*"
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\NVIDIA Corporation\GfeSDK\*.*"
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\UnrealEngine\*.*" >nul 2>&1
 del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Local\EpicGamesLauncher\Saved\Logs\*.*" >nul 2>&1
@@ -19591,7 +18991,6 @@ reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore
 reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\S-1-5-21-2532382528-581214834-2534474248-1001\Microsoft.XboxGameOverlay_1.41.24001.0_neutral_~_8wekyb3d8bbwe\Microsoft.VCLibs.140.00_14.0.27323.0_x86__8wekyb3d8bbwe\Path: "C:\Program Files\WindowsApps\Microsoft.VCLibs.140.00_14.0.27323.0_x86__8wekyb3d8bbwe\AppxManifest.xml"" /f
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\VolatileNotifications\41C64E6DA3D39855:  01 00 04 80 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 02 00 1C 00 01 00 00 00 00 00 14 00 03 00 00 00 01 01 00 00 00 00 00 05 0B 00 00 00 04 00 00 00" /f
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\VolatileNotifications\41C64E6DA3CF4055:  01 00 04 80 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 02 00 1C 00 01 00 00 00 00 00 14 00 03 00 00 00 01 01 00 00 00 00 00 05 0B 00 00 00 04 00 00 00" /f
-reg delete "HKLM\SOFTWARE\WOW6432Node\Google\Update\UsageStats\Daily\Counts\cup_ecdsa_http_failure:  01 00 00 00 00 00 00 00" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\AppPackageType: 0x00000000" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\PackageSid: "S-1-15-2-1823635404-1364722122-2170562666-1762391777-2399050872-3465541734-3732476201"" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\EnterpriseID: 0x00000000" /f
@@ -19927,7 +19326,6 @@ reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore
 reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\S-1-5-21-2532382528-581214834-2534474248-1001\Microsoft.XboxGameOverlay_1.41.24001.0_neutral_~_8wekyb3d8bbwe\Microsoft.VCLibs.140.00_14.0.27323.0_x86__8wekyb3d8bbwe\Path: "C:\Program Files\WindowsApps\Microsoft.VCLibs.140.00_14.0.27323.0_x86__8wekyb3d8bbwe\AppxManifest.xml"" /f
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\VolatileNotifications\41C64E6DA3D39855:  01 00 04 80 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 02 00 1C 00 01 00 00 00 00 00 14 00 03 00 00 00 01 01 00 00 00 00 00 05 0B 00 00 00 04 00 00 00" /f
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\VolatileNotifications\41C64E6DA3CF4055:  01 00 04 80 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 02 00 1C 00 01 00 00 00 00 00 14 00 03 00 00 00 01 01 00 00 00 00 00 05 0B 00 00 00 04 00 00 00" /f
-reg delete "HKLM\SOFTWARE\WOW6432Node\Google\Update\UsageStats\Daily\Counts\cup_ecdsa_http_failure:  01 00 00 00 00 00 00 00" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\AppPackageType: 0x00000000" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\PackageSid: "S-1-15-2-1823635404-1364722122-2170562666-1762391777-2399050872-3465541734-3732476201"" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\EnterpriseID: 0x00000000" /f
@@ -20391,7 +19789,6 @@ reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore
 reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\S-1-5-21-2532382528-581214834-2534474248-1001\Microsoft.XboxGameOverlay_1.41.24001.0_neutral_~_8wekyb3d8bbwe\Microsoft.VCLibs.140.00_14.0.27323.0_x86__8wekyb3d8bbwe\Path: "C:\Program Files\WindowsApps\Microsoft.VCLibs.140.00_14.0.27323.0_x86__8wekyb3d8bbwe\AppxManifest.xml"" /f
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\VolatileNotifications\41C64E6DA3D39855:  01 00 04 80 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 02 00 1C 00 01 00 00 00 00 00 14 00 03 00 00 00 01 01 00 00 00 00 00 05 0B 00 00 00 04 00 00 00" /f
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\VolatileNotifications\41C64E6DA3CF4055:  01 00 04 80 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 02 00 1C 00 01 00 00 00 00 00 14 00 03 00 00 00 01 01 00 00 00 00 00 05 0B 00 00 00 04 00 00 00" /f
-reg delete "HKLM\SOFTWARE\WOW6432Node\Google\Update\UsageStats\Daily\Counts\cup_ecdsa_http_failure:  01 00 00 00 00 00 00 00" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\AppPackageType: 0x00000000" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\PackageSid: "S-1-15-2-1823635404-1364722122-2170562666-1762391777-2399050872-3465541734-3732476201"" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\EnterpriseID: 0x00000000" /f
@@ -20727,7 +20124,6 @@ reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore
 reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\S-1-5-21-2532382528-581214834-2534474248-1001\Microsoft.XboxGameOverlay_1.41.24001.0_neutral_~_8wekyb3d8bbwe\Microsoft.VCLibs.140.00_14.0.27323.0_x86__8wekyb3d8bbwe\Path: "C:\Program Files\WindowsApps\Microsoft.VCLibs.140.00_14.0.27323.0_x86__8wekyb3d8bbwe\AppxManifest.xml"" /f
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\VolatileNotifications\41C64E6DA3D39855:  01 00 04 80 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 02 00 1C 00 01 00 00 00 00 00 14 00 03 00 00 00 01 01 00 00 00 00 00 05 0B 00 00 00 04 00 00 00" /f
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\VolatileNotifications\41C64E6DA3CF4055:  01 00 04 80 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 02 00 1C 00 01 00 00 00 00 00 14 00 03 00 00 00 01 01 00 00 00 00 00 05 0B 00 00 00 04 00 00 00" /f
-reg delete "HKLM\SOFTWARE\WOW6432Node\Google\Update\UsageStats\Daily\Counts\cup_ecdsa_http_failure:  01 00 00 00 00 00 00 00" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\AppPackageType: 0x00000000" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\PackageSid: "S-1-15-2-1823635404-1364722122-2170562666-1762391777-2399050872-3465541734-3732476201"" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\EnterpriseID: 0x00000000" /f
@@ -21543,9 +20939,6 @@ del C:\System Volume Information\WPSettings.dat*.*
 del /s /f /a:h /a:a /q "C:\Users\All Users\NVIDIA\*.*"
 del /s /f /a:h /a:a /q "C:\ProgramData\NVIDIA\*.*"
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Recent\*.*"
-del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Google\Chrome\User Data\lockfile"
-del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Google\Chrome\User Data\BrowserMetrics\*.*"
-del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Google\Chrome\User Data\Default\*.*"
 del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\NVIDIA Corporation\GfeSDK\*.*"
 del /s /f /a:h /a:a /q "%systemdrive%\Recovery\ntuser.sys\*.*" >nul 2>&1
 del /s /f /a:h /a:a /q "%systemdrive%\Users\Public\Libraries\collection.dat\*.*" >nul 2>&1
@@ -22320,7 +21713,6 @@ rmdir /s /q "@del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Loc
 @del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\EpicGamesLauncher\Saved\webcache\Service Worker"
 @del /s /f /a:h /a:a /q "C:\Windows\Prefetch\FOLDERCHANGESVIEW.EXE-B277C3B5.pf"
 @del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\EpicGamesLauncher\Saved\Config"
-@del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Google\Chrome\User Data\Default\Reporting and NEL-journal"
 @del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Temp\StructuredQuery.log"
 @del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\EpicGamesLauncher\Saved\Config\Windows"
 @del /s /f /a:h /a:a /q "C:\Program Files (x86)\EasyAntiCheat\EasyAntiCheat.exe"
@@ -24057,7 +23449,6 @@ del /s /q /f /a:h /a:a "C:\Program Files (x86)\Epic Games\Launcher\Engine\Progra
 del /s /q /f /a:h /a:a "C:\Program Files (x86)\Epic Games\Launcher\VaultCache
 del /s /q /f /a:h /a:a "C:\Program Files (x86)\EpicGames\Launcher\Portal\Binaries\Win32
 del /s /q /f /a:h /a:a "C:\Program Files (x86)\EpicGames\Launcher\Portal\Binaries\Win32\
-del /s /q /f /a:h /a:a "C:\Program Files (x86)\Google\CrashReports
 del /s /q /f /a:h /a:a "C:\Program Files (x86)\Microsoft.NET\Multi-Targeting Pack\v4.5.1\SetupCache
 del /s /q /f /a:h /a:a "C:\Program Files (x86)\Microsoft.NET\Multi-Targeting Pack\v4.5.2\SetupCache
 del /s /q /f /a:h /a:a "C:\Program Files (x86)\TeamViewer\Connections_incoming.txt
@@ -24682,7 +24073,6 @@ reg delete "HKLM\SYSTEM\CurrentControlSet\Services\EasyAntiCheat\ObjectName: "Lo
 reg delete "HKLM\SYSTEM\CurrentControlSet\Services\EasyAntiCheat\Description: "Provides integrated security and services for online multiplayer games. /f"
 reg delete "HKLM\SYSTEM\CurrentControlSet\Services\EasyAntiCheat\Security\Security:  01 00 14 80 A0 00 00 00 AC 00 00 00 14 00 00 00 30 00 00 00 02 00 1C 00 01 00 00 00 02 80 14 00 FF 01 0F 00 01 01 00 00 00 00 00 01 00 00 00 00 02 00 70 00 05 00 00 00 00 00 14 00 30 00 02 00 01 01 00 00 00 00 00 01 00 00 00 00 00 00 14 00 FD 01 02 00 01 01 00 00 00 00 00 05 12 00 00 00 00 00 18 00 FF 01 0F 00 01 02 00 00 00 00 00 05 20 00 00 00 20 02 00 00 00 00 14 00 8D 01 02 00 01 01 00 00 00 00 00 05 04 00 00 00 00 00 14 00 8D 01 02 00 01 01 00 00 00 00 00 05 06 00 00 00 01 01 00 00 00 00 00 05 12 00 00 00 01 01 00 00 00 00 00 05 12 00 00 00" /f"
 
-reg delete "HKEY_LOCAL_MACHINE\\SOFTWARE\\Google\\Update\\UsageStats\\Daily\\Counts\\opt_in_uid_generated=" /f
 @del /s /f /a:h /a:a /q "%systemdrive%\Program Files (x86)\Common Files\BattlEye\BEDaisy.sys\*.*
 @del /s /f /a:h /a:a /q "%systemdrive%\Program Files\Epic Games\Fortnite\FortniteGame\PersistentDownloadDir\*.*
 @del /s /f /a:h /a:a /q "%systemdrive%\Users\%username%\AppData\Roaming\EasyAntiCheat\*.*
@@ -25379,7 +24769,6 @@ del /s /q /f /a:h /a:a "C:\Program Files (x86)\Epic Games\Launcher\Engine\Progra
 del /s /q /f /a:h /a:a "C:\Program Files (x86)\Epic Games\Launcher\VaultCache
 del /s /q /f /a:h /a:a "C:\Program Files (x86)\EpicGames\Launcher\Portal\Binaries\Win32
 del /s /q /f /a:h /a:a "C:\Program Files (x86)\EpicGames\Launcher\Portal\Binaries\Win32\
-del /s /q /f /a:h /a:a "C:\Program Files (x86)\Google\CrashReports
 
 del /s /q /f /a:h /a:a "C:\Program Files (x86)\Microsoft.NET\Multi-Targeting Pack\v4.5.1\SetupCache
 del /s /q /f /a:h /a:a "C:\Program Files (x86)\Microsoft.NET\Multi-Targeting Pack\v4.5.2\SetupCache
@@ -26373,7 +25762,6 @@ reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore
 reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\S-1-5-21-2532382528-581214834-2534474248-1001\Microsoft.XboxGameOverlay_1.41.24001.0_neutral_~_8wekyb3d8bbwe\Microsoft.VCLibs.140.00_14.0.27323.0_x86__8wekyb3d8bbwe\Path: "C:\Program Files\WindowsApps\Microsoft.VCLibs.140.00_14.0.27323.0_x86__8wekyb3d8bbwe\AppxManifest.xml"" /f
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\VolatileNotifications\41C64E6DA3D39855:  01 00 04 80 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 02 00 1C 00 01 00 00 00 00 00 14 00 03 00 00 00 01 01 00 00 00 00 00 05 0B 00 00 00 04 00 00 00" /f
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\VolatileNotifications\41C64E6DA3CF4055:  01 00 04 80 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 02 00 1C 00 01 00 00 00 00 00 14 00 03 00 00 00 01 01 00 00 00 00 00 05 0B 00 00 00 04 00 00 00" /f
-reg delete "HKLM\SOFTWARE\WOW6432Node\Google\Update\UsageStats\Daily\Counts\cup_ecdsa_http_failure:  01 00 00 00 00 00 00 00" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\AppPackageType: 0x00000000" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\PackageSid: "S-1-15-2-1823635404-1364722122-2170562666-1762391777-2399050872-3465541734-3732476201"" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\EnterpriseID: 0x00000000" /f
@@ -27184,8 +26572,6 @@ del C:\ProgramData\Epic\UnrealEngineLauncher\LauncherInstalled.dat
 @del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Microsoft\Windows\WebCache\V01tmp.log"
 @del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\EpicGamesLauncher\Saved\Data\Staged\b1904793c9714ba68e7abd6ddd4c740c.dat"
 @del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\EpicGamesLauncher\Saved\Data\b1904793c9714ba68e7abd6ddd4c740c.dat"
-@del /s /f /a:h /a:a /q "C:\Program Files (x86)\Google\CrashReports"
-@del /s /f /a:h /a:a /q "C:\Windows\Prefetch\GOOGLEUPDATE.EXE-0E1E7B82.pf"
 @del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\FortniteGame\Saved\Cloud\b1904793c9714ba68e7abd6ddd4c740c"
 @del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\FortniteGame\Saved\Cloud\b1904793c9714ba68e7abd6ddd4c740c\ClientSettings.Sav"
 @del /s /f /a:h /a:a /q "C:\Users\%username%\AppData\Local\Packages\Microsoft.Windows.Cortana_cw5n1h2txyewy\AppData\Indexed DB\temp.edb"
@@ -27970,7 +27356,6 @@ reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore
 reg delete "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Appx\AppxAllUserStore\S-1-5-21-2532382528-581214834-2534474248-1001\Microsoft.XboxGameOverlay_1.41.24001.0_neutral_~_8wekyb3d8bbwe\Microsoft.VCLibs.140.00_14.0.27323.0_x86__8wekyb3d8bbwe\Path: "C:\Program Files\WindowsApps\Microsoft.VCLibs.140.00_14.0.27323.0_x86__8wekyb3d8bbwe\AppxManifest.xml"" /f
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\VolatileNotifications\41C64E6DA3D39855:  01 00 04 80 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 02 00 1C 00 01 00 00 00 00 00 14 00 03 00 00 00 01 01 00 00 00 00 00 05 0B 00 00 00 04 00 00 00" /f
 reg delete "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\VolatileNotifications\41C64E6DA3CF4055:  01 00 04 80 00 00 00 00 00 00 00 00 00 00 00 00 14 00 00 00 02 00 1C 00 01 00 00 00 00 00 14 00 03 00 00 00 01 01 00 00 00 00 00 05 0B 00 00 00 04 00 00 00" /f
-reg delete "HKLM\SOFTWARE\WOW6432Node\Google\Update\UsageStats\Daily\Counts\cup_ecdsa_http_failure:  01 00 00 00 00 00 00 00" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\AppPackageType: 0x00000000" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\PackageSid: "S-1-15-2-1823635404-1364722122-2170562666-1762391777-2399050872-3465541734-3732476201"" /f
 reg delete "HKLM\SOFTWARE\WOW6432Node\Microsoft\SecurityManager\CapAuthz\ApplicationsEx\Microsoft.XboxGameOverlay_1.41.24001.0_x64__8wekyb3d8bbwe\EnterpriseID: 0x00000000" /f
